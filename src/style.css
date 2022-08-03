@@ -24,3 +24,29 @@ form {
   padding: 16px;
   width: 320px;
 }
+
+button {
+  background: rgb(68, 255, 0);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 8px 16px;
+  transition: 0.5s;
+}
+
+button:focus,
+button:hover {
+  background-color: yellow;
+  cursor: pointer;
+  transform: scalex(1.2) translateY(1.5px);
+}
+
+label {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
