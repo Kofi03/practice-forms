@@ -5,4 +5,6 @@ const form = document.querySelector("form"); // document is a reference to the p
 // console
 form.addEventListener("submit", (itHappened) => {
   itHappened.preventDefault();
+  const submission = Object.fromEntries(new FormData(event.target));
+  console.log(submission);
 });
