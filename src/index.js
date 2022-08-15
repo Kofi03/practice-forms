@@ -3,3 +3,6 @@
 const form = document.querySelector("form"); // document is a reference to the page
 // DOM: document object module
 // console
+form.addEventListener("submit", (itHappened) => {
+  itHappened.preventDefault();
+});
